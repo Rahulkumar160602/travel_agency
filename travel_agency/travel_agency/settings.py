@@ -25,9 +25,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3i6hjdo-r#-bj21i_*op2hzame@^h%=m3&zln_0x1w)=!aa@n('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False  # Turn off debug mode for production
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["travel-agency-a9yk.onrender.com"]  # Your actual Render URL
+
+CSRF_TRUSTED_ORIGINS = ["https://travel-agency-a9yk.onrender.com"]  # Your actual Render URL
+
 
 
 # Application definition
