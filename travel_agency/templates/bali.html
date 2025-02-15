@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali - Island of the Gods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: url('/static/bali4.jpg') no-repeat center center/cover;
+            height: 50vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center/cover;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        nav {
+            background-color: #0066cc;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .intro h2 {
+            font-size: 2.5rem;
+            color: #0066cc;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .highlight {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .highlight:hover {
+            transform: translateY(-10px);
+        }
+        .highlight img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .highlight h3 {
+            margin: 0;
+            padding: 1rem;
+            background: #0066cc;
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .highlight p {
+            padding: 1rem;
+            font-size: 1rem;
+            color: #666;
+        }
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bali - Island of the Gods</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/destinations">Destinations</a>
+        <a href="/contact">Contact Us</a>
+    </nav>
+    <section>
+        <div class="intro">
+            <h2>Welcome to Bali</h2>
+            <p>Discover the stunning landscapes, vibrant culture, and serene beauty that make Bali a true paradise.</p>
+        </div>
+        <div class="highlights">
+            <div class="highlight">
+                <a href="tanahlot" style="text-decoration:none ;color:inherit;">
+                <img src="/static/Tanah Lot Temple.jpg" alt="Tanah Lot Temple">
+                <h3>Tanah Lot Temple</h3>
+                <p>A picturesque sea temple known for its stunning sunset views.</p>
+                </a>
+            </div>
+            <div class="highlight">
+                <a href="riceterrace" style="text-decoration:none ; color:inherit">
+                <img src="/static/Tegalalang Rice Terraces.jpg" alt="Tegalalang Rice Terraces">
+                <h3>Tegalalang Rice Terraces</h3>
+                <p>Lush green rice paddies showcasing Bali's traditional irrigation system.</p>
+                </a>
+            </div>
+            <div class="highlight">
+                <a href="/nusapenida" style="text-decoration:none ; color:inherit;">
+                <img src="/static/Nusa Penida.jpg" alt="Nusa Penida">
+                <h3>Nusa Penida</h3>
+                <p>Explore dramatic cliffs, clear waters, and vibrant marine life.</p>
+                </a>
+            </div>
+            <div class="highlight">
+                <a href="monkeyforest" style="text-decoration:none ; color:inherit;">
+                <img src="/static/Ubud Monkey Forest.jpg" alt="Ubud Monkey Forest">
+                <h3>Ubud Monkey Forest</h3>
+                <p>A sanctuary for playful monkeys set amidst a lush forest.</p>
+                </a>
+            </div>
+            <div class="highlight">
+                <a href="/mountbatur" style="text-decoration:none ; color:inherit;">
+                <img src="/static/Mount Batur.jpg" alt="Mount Batur">
+                <h3>Mount Batur</h3>
+                <p>Witness a breathtaking sunrise after a trek up this active volcano.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Bali Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+        }
+        .login-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .login-container h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            margin-bottom: 0.5rem;
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        .social-login a {
+            flex: 1;
+            margin: 0 0.5rem;
+            padding: 0.5rem;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .social-login a.facebook {
+            background-color: #3b5998;
+        }
+        .social-login a.google {
+            background-color: #db4437;
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .signup-link {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .signup-link a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="/submit-login" method="POST">
+            <div class="form-group">
+                <label for="email-phone">Email or Phone Number</label>
+                <input type="text" id="email-phone" name="emailOrPhone" placeholder="Enter your email or phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <div class="social-login">
+            <a href="#" class="facebook">Login with Facebook</a>
+            <a href="#" class="google">Login with Google</a>
+        </div>
+        <div class="signup-link">
+            <p>Don't have an account? <a href="/signup">Signup</a></p>
+        </div>
+    </div>
+</body>
+</html>

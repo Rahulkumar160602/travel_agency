@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 1rem;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #0066cc;
+        }
+        .form-container label {
+            font-size: 1rem;
+            color: #333;
+        }
+        .form-container input, .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #0066cc;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .form-container button:hover {
+            background-color: #004d99;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Book Your Trip</h2>
+        <form action="/submit-booking" method="post">
+            {% csrf_token %}
+            
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" name="destination" readonly value="{{ destination }}">
+            
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="date">Travel Date</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+            
+            <label for="notes">Special Requests</label>
+            <textarea id="notes" name="notes"></textarea>
+            
+            <button type="submit">Submit Booking</button>
+        </form>
+        
+    </div>
+</body>
+</html>

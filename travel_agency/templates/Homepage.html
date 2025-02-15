@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+            display:static;
+        }
+        header {
+            background: url('/static/tropical-beach.jpg') no-repeat center center/cover;
+            height: 60vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        nav {
+            background-color: #0066cc;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        nav a.login-signup {
+            background-color: #007bff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin-left: 1rem;
+        }
+        nav a.login-signup:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            margin: 2rem auto;
+            text-align: center;
+            padding: 1rem;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 50%;
+        }
+        section {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem;
+            text-align: center;
+        }
+        section div {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        section div:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+        section div img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #0066cc;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        footer div {
+            margin: 1rem 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Paradise</h1>
+    </header>
+    <div class="content">
+        <p>Discover amazing features and stay connected.</p>
+        <a href="/login" class="login-signup">Login or Signup</a>
+    </div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/destinations">Destinations</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/login">Login or Signup</a>
+    </nav>
+    <section>
+        <div>
+            <a href="/explore-destinations" style="text-decoration: none; color: inherit;">
+                <img src="/static/explore.jpg" alt="Explore Destinations">
+                <h2>Explore Destinations</h2>
+                <p>Discover the world's most amazing places with us.</p>
+            </a>
+        </div>
+        
+        <div>
+            <img src="/static/plan1.jpg" alt="Plan Your Trip">
+            <h2>Plan Your Trip</h2>
+            <p>Customize your travel itinerary with ease.</p>
+        </div>
+        <div>
+            <a href="/contact" style="text-decoration: none; color: inherit;">
+            <img src="/static/contact.jpg" alt="Contact Us">
+            <h2>Contact Us</h2>
+            <p>We're here to answer all your travel queries.</p>
+        </div>
+    </section>
+    <footer>
+        <div>
+            Follow us on:
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+        <div>
+            Subscribe for updates:
+            <form>
+                <input type="email" placeholder="Your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 2rem 1rem;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 2rem;
+        }
+
+        .form-section, .info-section {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input:focus, form textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .info-section h2, .info-section h3 {
+            margin-top: 0;
+        }
+
+        .info-section p {
+            margin: 0.5rem 0;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Reach out to us using the form below.</p>
+    </header>
+    <main class="main-container">
+        <div class="contact-container">
+            <div class="form-section">
+                <form action="/contact/" method="POST">
+                    {% csrf_token %}
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message" rows="5" required></textarea>
+                
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="info-section">
+                <h2>Our Office</h2>
+                <p>1234 Travel Agency Lane</p>
+                <p>Cityville, ST 56789</p>
+                <p>Email: info@travelagency.com</p>
+                <p>Phone: (123) 456-7890</p>
+
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="/static/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="/static/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="/static/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

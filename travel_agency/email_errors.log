@@ -1,0 +1,69 @@
+Internal Server Error: /submit-booking
+Traceback (most recent call last):
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 143, in submit_booking
+    send_ticket_email(email, name, ticket_path)
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 219, in send_ticket_email
+    email_message.send(fail_silently=False)
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\core\mail\message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\core\mail\backends\smtp.py", line 102, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\core\mail\backends\smtp.py", line 67, in open
+    self.connection.starttls(keyfile=self.ssl_keyfile, certfile=self.ssl_certfile)
+TypeError: SMTP.starttls() got an unexpected keyword argument 'keyfile'
+"POST /submit-booking HTTP/1.1" 500 83842
+Internal Server Error: /submit-booking
+Traceback (most recent call last):
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 128, in submit_booking
+    email_sent = send_ticket_email(email, name, ticket_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: send_ticket_email() missing 3 required positional arguments: 'date', 'guests', and 'notes'
+"POST /submit-booking HTTP/1.1" 500 67637
+Internal Server Error: /submit-booking
+Traceback (most recent call last):
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 128, in submit_booking
+    email_sent = send_ticket_email(email, name, ticket_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: send_ticket_email() missing 3 required positional arguments: 'date', 'guests', and 'notes'
+"POST /submit-booking HTTP/1.1" 500 67639
+Internal Server Error: /contact
+Traceback (most recent call last):
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\utils\deprecation.py", line 113, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/contact/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /contact HTTP/1.1" 500 70530
+Internal Server Error: /contact/
+"POST /contact/ HTTP/1.1" 500 38
+Internal Server Error: /contact/
+"POST /contact/ HTTP/1.1" 500 38
+Internal Server Error: /contact/
+"POST /contact/ HTTP/1.1" 500 38

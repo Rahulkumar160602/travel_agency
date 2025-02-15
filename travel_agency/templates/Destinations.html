@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #004d99;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 0 1rem;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 0;
+            padding: 1rem;
+            background: #0066cc;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .card p {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: #666;
+            text-align: center;
+        }
+        .book-button {
+            display: inline-block;
+            background-color: #0066cc; /* Blue background */
+            color: white; /* White text */
+            font-size: 1rem;
+            padding: 0.8rem 1.5rem; /* Adjust padding for better click area */
+            text-align: center;
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            transition: all 0.3s ease; /* Smooth hover effect */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+        }
+        .book-button:hover {
+            background-color: #004d99; /* Darker blue on hover */
+            transform: translateY(-3px); /* Slight lift on hover */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+        .book-button:active {
+            transform: translateY(1px); /* Slight push down on click */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Restore original shadow */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Our Destinations</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/destinations">Destinations</a>
+        <a href="/contact">Contact Us</a>
+        
+    </nav>
+    <div class="container">
+        <!-- Card for each destination -->
+        <div class="card">
+            <a href="/paris/" style="text-decoration: none; color: inherit;">
+                <img src="/static/paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>The city of love, known for the Eiffel Tower and charming streets.</p>
+                <p>Trip Cost:500$</p>
+                <a href="/book?destination=Paris" class="book-button">Book Now</a>
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="/bali/" style="text-decoration: none; color: inherit;">
+            <img src="/static/bali.jpg" alt="Bali">
+            <h3>Bali</h3>
+            <p>A tropical paradise with stunning beaches and rich culture.</p>
+            <p>Trip Cost:400$</p>
+            <a href="/book?destination=Bali" class="book-button">Book Now</a>
+        </div>
+        <div class="card">
+            <a href="/rome/" style="text-decoration: none; color: inherit;">
+            <img src="/static/rome.jpg" alt="Rome">
+            <h3>Rome</h3>
+            <p>The Eternal City, filled with history, art, and Italian cuisine.</p>
+            <p>Trip Cost:400$</p>
+            <a href="/book?destination=Rome" class="book-button">Book Now</a>
+
+        </div>
+        <div class="card">
+            <a href="/tokyo/" style="text-decoration: none; color: inherit;">
+            <img src="/static/tokyo.jpg" alt="Tokyo">
+            <h3>Tokyo</h3>
+            <p>A bustling metropolis with a unique blend of tradition and modernity.</p>
+            <p>Trip Cost:300$</p>
+            <a href="/book?destination=Tokyo" class="book-button">Book Now</a>
+
+        </div>
+        <div class="card">
+            <a href="/newyork/" style="text-decoration: none; color: inherit;">
+            <img src="/static/newyork.jpg" alt="New York">
+            <h3>New York</h3>
+            <p>The city that never sleeps, home to iconic landmarks and culture.</p>
+            <p>Trip Cost:700$</p>
+            <a href="/book?destination=Newyork" class="book-button">Book Now</a>
+
+        </div>
+        <div class="card">
+            <a href="/sydney/" style="text-decoration: none; color: inherit;">
+            <img src="/static/sydney.jpg" alt="Sydney">
+            <h3>Sydney</h3>
+            <p>Famous for the Opera House and beautiful harbor views.</p>
+            <p>Trip Cost:500$</p>
+            <a href="/book?destination=Sydney" class="book-button">Book Now</a>
+
+        </div>
+        <div class="card">
+            <a href="/capetown/" style="text-decoration: none; color: inherit;">
+            <img src="/static/capetown.jpg" alt="Cape Town">
+            <h3>Cape Town</h3>
+            <p>A vibrant city at the tip of Africa, surrounded by natural beauty.</p>
+            <p>Trip Cost:600$</p>
+            <a href="/book?destination=Capetown" class="book-button">Book Now</a>
+
+        </div>
+        
+        <div class="card">
+            <a href="/dubai/" style="text-decoration: none; color: inherit;">
+            <img src="/static/dubai.jpg" alt="Dubai">
+            <h3>Dubai</h3>
+            <p>A modern city with luxury shopping, ultramodern architecture, and lively nightlife.</p>
+            <p>Trip Cost:400$</p>
+            <a href="/book?destination=Dubai" class="book-button">Book Now</a>
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>

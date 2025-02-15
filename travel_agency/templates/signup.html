@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+        }
+
+        .signup-form {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 400px;
+            margin-bottom: 20px;
+        }
+
+        .signup-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .form-input:focus {
+            border-color: #3b82f6;
+            outline: none;
+            box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+        }
+
+        .submit-btn {
+            background-color: #3b82f6;
+            color: white;
+            padding: 14px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #2563eb;
+        }
+
+        /* Notification Styling */
+        .notification {
+            display: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            font-size: 18px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeInOut 4s ease-in-out forwards;
+        }
+
+        /* Animation for notification */
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 480px) {
+            .signup-form {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Signup Form -->
+    <div class="signup-form">
+        <h2>Create Your Account</h2>
+        <form id="signupForm">
+            {% csrf_token %}
+            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+            <input type="text" id="phone" name="phone" class="form-input" placeholder="Enter your phone number" required>
+            <input type="password" id="password" name="password" class="form-input" placeholder="Enter your password" required>
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+    </div>
+
+    <!-- Success Notification (Initially hidden) -->
+    <div id="successNotification" class="notification">
+        Signup successfully! 👍
+    </div>
+
+    <script>
+        // Handle the form submission with AJAX
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var formData = new FormData(this);
+
+            // Perform AJAX request
+            fetch("{% url 'signup' %}", {
+                method: "POST",
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message === "Signup successful!") {
+                    // Show the success notification
+                    var notification = document.getElementById('successNotification');
+                    notification.style.display = 'block';
+                    
+                    // Hide the notification after 4 seconds
+                    setTimeout(() => {
+                        notification.style.display = 'none';
+                    }, 4000);
+
+                    // Clear the form data after success
+                    document.getElementById('signupForm').reset();
+                } else {
+                    // Handle error
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("Something went wrong. Please try again.");
+            });
+        });
+    </script>
+
+</body>
+</html>

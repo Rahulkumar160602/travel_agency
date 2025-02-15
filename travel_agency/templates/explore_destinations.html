@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated World Map with Pinned Cities</title>
+    <style>
+        body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0; }
+        #map-container {
+            width: 90vw;
+            height: 90vh;
+            background-image: url('/static/map.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            border: 2px solid #333;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+        .pin {
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounce 1s infinite;
+        }
+        .pin::after {
+            content: attr(data-city);
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            background-color: #fff;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 12px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="map-container">
+        <a href="/paris/">
+            <div class="pin" style="top: 35%; left: 50%;" data-city="Paris"></div>
+        </a>
+    
+        <a href="/bali/">
+            <div class="pin" style="top: 65%; left: 83%;" data-city="Bali"></div>
+        </a>
+    
+        <a href="/rome/">
+            <div class="pin" style="top: 43%; left: 48%;" data-city="Rome"></div>
+        </a>
+    
+        <a href="/tokyo/">
+            <div class="pin" style="top: 50%; left: 73%;" data-city="Tokyo"></div>
+        </a>
+    
+        <a href="/newyork/">
+            <div class="pin" style="top: 40%; left: 30%;" data-city="New York"></div>
+        </a>
+    
+        <a href="/sydney/">
+            <div class="pin" style="top: 70%; left: 80%;" data-city="Sydney"></div>
+        </a>
+    
+        <a href="/capetown/">
+            <div class="pin" style="top: 80%; left: 33%;" data-city="Cape Town"></div>
+        </a>
+    
+        <a href="/dubai/">
+            <div class="pin" style="top: 45%; left: 60%;" data-city="Dubai"></div>
+        </a>
+    </div>
+    
+
+</body>
+</html>

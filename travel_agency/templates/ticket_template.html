@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise Travel Ticket</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #eef5f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .ticket {
+            background: white;
+            border-radius: 15px;
+            width: 500px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: relative;
+            border: 3px solid #0066cc;
+            background-image: url('/static/ticket.jpg'); /* Ensure this image reflects your brand */
+            background-size: cover;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 15px;
+            color: #0066cc;
+        }
+        .header i {
+            font-size: 40px;
+        }
+        .header h2 {
+            margin: 5px 0;
+        }
+        .details {
+            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .details p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #444;
+        }
+        .details strong {
+            color: #0066cc;
+        }
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #0066cc;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="header">
+            <i class="fas fa-plane"></i>
+            <h2>Paradise Travel Ticket</h2>
+        </div>
+        <div class="details">
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Destination:</strong> {{ destination }}</p>
+            <p><strong>Travel Date:</strong> {{ date }}</p>
+            <p><strong>Guests:</strong> {{ guests }}</p>
+            <p><strong>Special Notes:</strong> {{ notes }}</p>
+        </div>
+        <div class="footer">
+            <p><i class="fas fa-globe"></i> Have a wonderful journey with Paradise!</p>
+        </div>
+    </div>
+</body>
+</html>

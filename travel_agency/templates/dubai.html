@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai - The City of Gold</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: url('/static/dubai.jpg') no-repeat center center/cover;
+            height: 60vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        nav {
+            background-color: #0066cc;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .intro h2 {
+            font-size: 2.5rem;
+            color: #0066cc;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .highlight {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .highlight:hover {
+            transform: translateY(-10px);
+        }
+        .highlight img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .highlight h3 {
+            margin: 0;
+            padding: 1rem;
+            background: #0066cc;
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .highlight p {
+            padding: 1rem;
+            font-size: 1rem;
+            color: #666;
+        }
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dubai - The City of Gold</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/destinations">Destinations</a>
+        <a href="/contact">Contact Us</a>
+    </nav>
+    <section>
+        <div class="intro">
+            <h2>Welcome to Dubai</h2>
+            <p>Discover the unparalleled luxury, towering skyscrapers, and vibrant culture of the UAE's iconic city.</p>
+        </div>
+        <div class="highlights">
+            <div class="highlight">
+                <a href="/burjkhalifa" style="text-decoration: none; color: inherit;">
+                    <img src="/static/burjkhalifa.jpg" alt="Burj Khalifa">
+                    <h3>Burj Khalifa</h3>
+                    <p>The tallest building in the world, offering breathtaking views of the city.</p>
+                </a>
+            </div>
+            <div class="highlight">
+                <a href="/palmjumeirah" style="text-decoration: none; color: inherit;">
+                    <img src="/static/palmjumeirah.jpg" alt="Palm Jumeirah">
+                    <h3>Palm Jumeirah</h3>
+                    <p>An architectural marvel and a hub for luxury and leisure.</p>
+                </a>
+            </div>
+            <div class="highlight">
+                <a href="/dubaimall" style="text-decoration: none; color: inherit;">
+                    <img src="/static/dubaimall.jpg" alt="Dubai Mall">
+                    <h3>Dubai Mall</h3>
+                    <p>A shopper's paradise with world-class dining and entertainment.</p>
+                </a>
+            </div>
+            <div class="highlight">
+                <a href="/desertsafari" style="text-decoration: none; color: inherit;">
+                    <img src="/static/desertsafari.jpg" alt="Desert Safari">
+                    <h3>Desert Safari</h3>
+                    <p>An unforgettable adventure across golden sand dunes.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Travel Agency. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
