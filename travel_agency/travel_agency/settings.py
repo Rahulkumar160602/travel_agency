@@ -22,16 +22,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-3i6hjdo-r#-bj21i_*op2hzame@^h%=m3&zln_0x1w)=!aa@n('
+SECRET_KEY = '160604'
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False  # Turn off debug mode for production
 
 ALLOWED_HOSTS = ["travel-agency-a9yk.onrender.com"]  # Your actual Render URL
 
 CSRF_TRUSTED_ORIGINS = ["https://travel-agency-a9yk.onrender.com"]  # Your actual Render URL
-
-
 
 # Application definition
 
@@ -59,8 +56,9 @@ ROOT_URLCONF = 'travel_agency.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates",
-    "/var/www/static/",],
+        'DIRS': [
+            BASE_DIR / "templates",  # This is where you should store your template files
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -72,6 +70,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'travel_agency.wsgi.application'
 
@@ -132,8 +131,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    "/var/www/static/",
+     BASE_DIR / "static",
 ]
 # MEDIA CONFIGURATION
 MEDIA_URL = '/media/'

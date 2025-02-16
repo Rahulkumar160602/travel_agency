@@ -22,3 +22,4 @@ urlpatterns = [
     path('',include('travel_app.urls'))
     
 ]
+
