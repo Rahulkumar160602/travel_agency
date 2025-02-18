@@ -18,7 +18,7 @@ SECRET_KEY = 'django-insecure-3i6hjdo-r#-bj21i_*op2hzame@^h%=m3&zln_0x1w)=!aa@n(
 DEBUG = True
 
 # Add Render domain here
-ALLOWED_HOSTS = ["travel-agency-a9yk.onrender.com", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ['travel-agency-a9yk.onrender.com', '127.0.0.1', 'localhost']
 
 # Application definition
 INSTALLED_APPS = [
