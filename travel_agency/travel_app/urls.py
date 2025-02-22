@@ -34,6 +34,7 @@ urlpatterns = [
     path('effiel/',views.effiel,name="effiel"),
     path('louvre/',views.louvre,name="louvre"),
     path("contact/", views.contact, name="contact"),
+    
 ] 
 
 # Media file handling

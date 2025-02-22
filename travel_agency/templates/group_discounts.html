@@ -4,9 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group Discounts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .discount-options {
+            margin-top: 2rem;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .option {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .option h3 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+
+        .option p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Group Discounts</h1>
-    <p>We offer exclusive discounts for group bookings. Contact us to learn more and make your group trip affordable!</p>
+    <header>
+        <h1>Group Discounts</h1>
+    </header>
+    <section>
+        <h2>Exclusive Group Discounts</h2>
+        <p>At Paradise, we offer exclusive discounts for group bookings. Whether you're traveling with family, friends, or colleagues, we have special offers to make your trip more affordable and enjoyable!</p>
+        
+        <div class="discount-options">
+            <div class="option">
+                <h3>The Ultimate Group Savings Package</h3>
+                <p>For groups of 10 or more, enjoy <strong>20% off</strong> on your entire travel package, including flights, accommodations, and activities!</p>
+            </div>
+            <div class="option">
+                <h3>The VIP Group Experience</h3>
+                <p>Groups of 15+ get <strong>15% off</strong> plus access to VIP experiences such as first-class lounges and private tours.</p>
+            </div>
+            <div class="option">
+                <h3>The 'Share the Adventure' Discount</h3>
+                <p>Invite another group of 10+ travelers and both groups will receive <strong>10% off</strong> their travel package!</p>
+            </div>
+            <div class="option">
+                <h3>Early Bird Group Special</h3>
+                <p>Book 6 months in advance for a group of 12 or more and receive <strong>25% off</strong>, plus a free group activity like a private beach party!</p>
+            </div>
+            <div class="option">
+                <h3>The Ultimate Team-Building Discount</h3>
+                <p>Corporate groups of 20+ can enjoy discounts of up to <strong>30%</strong>, plus custom team-building activities tailored for your group.</p>
+            </div>
+            <div class="option">
+                <h3>The Reunite & Save Deal</h3>
+                <p>For family or school reunions of 15+, receive special pricing and a free group dinner at a local restaurant.</p>
+            </div>
+            <div class="option">
+                <h3>The Double Savings Deal</h3>
+                <p>Groups of 10-20 receive an additional <strong>10% off</strong> on select activities, plus discounts on travel insurance for all members.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Your Travel Agency Name] | All Rights Reserved</p>
+    </footer>
 </body>
 </html>

@@ -29,16 +29,95 @@
             padding: 2rem;
             text-align: center;
         }
+
+        h2 {
+            font-size: 2rem;
+            color: #0066cc;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 1rem 0;
+        }
+
+        .steps, .itinerary-options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .step, .option {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 8px;
+            width: 280px;
+            text-align: center;
+        }
+
+        .step h3, .option h3 {
+            color: #0066cc;
+        }
+
+        .step p, .option p {
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Custom Itineraries</h1>
     </header>
+
     <section>
         <h2>Create Your Personalized Travel Plan</h2>
-        <p>At our travel agency, we offer tailored itineraries designed to meet your preferences, budget, and schedule.</p>
+        <p>At our travel agency, we offer tailored itineraries designed to meet your preferences, budget, and schedule. Whether you're looking for a relaxing beach vacation, an adventurous journey, or a cultural experience, we’ve got you covered.</p>
         <p>Contact us today to start planning your dream trip!</p>
     </section>
+
+    <section class="steps">
+        <div class="step">
+            <h3>Step 1: Consultation</h3>
+            <p>We’ll discuss your travel preferences, budget, and must-visit destinations to understand your vision.</p>
+        </div>
+        <div class="step">
+            <h3>Step 2: Custom Plan</h3>
+            <p>Our team will design a personalized itinerary tailored to your needs, including accommodations, transportation, and activities.</p>
+        </div>
+        <div class="step">
+            <h3>Step 3: Review & Adjust</h3>
+            <p>Review your itinerary, and we’ll make any necessary changes to ensure it’s perfect for you.</p>
+        </div>
+    </section>
+
+    <section class="itinerary-options">
+        <div class="option">
+            <h3>Family Getaways</h3>
+            <p>Create the perfect family vacation with activities and accommodations that suit everyone’s needs.</p>
+        </div>
+        <div class="option">
+            <h3>Romantic Escapes</h3>
+            <p>Escape to a dreamy destination with romantic settings, private tours, and intimate experiences.</p>
+        </div>
+        <div class="option">
+            <h3>Adventure Travel</h3>
+            <p>Design your adventure-packed trip with thrilling activities and explorations in nature’s wonders.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 [Your Travel Agency Name]. All rights reserved.</p>
+    </footer>
 </body>
 </html>
