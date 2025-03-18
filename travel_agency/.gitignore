@@ -8,9 +8,6 @@ __pycache__/
 venv/
 env/
 
-# Ignore static and media files
-/static/
-/media/
 
 # Ignore database files
 db.sqlite3
