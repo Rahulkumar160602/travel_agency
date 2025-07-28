@@ -5,6 +5,9 @@ from django.http import HttpResponse
 from travel_app import views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.urls import path
+from .views import chat_response
+
 
 urlpatterns = [
     path("", views.homepage, name="homepage"),
@@ -27,13 +30,23 @@ urlpatterns = [
     path('bali/', views.bali, name="bali"),
     path('book/', views.book, name='book'),
     path('submit-booking', views.submit_booking, name='submit_booking'),
-    path('login/', views.login, name="login"),
-    path("signup/", views.signup, name="signup"),
     path('explore-destinations/', views.explore_destinations, name='explore_destinations'),
     path('test-write/', views.test_file_write, name='test_write'),
     path('effiel/',views.effiel,name="effiel"),
     path('louvre/',views.louvre,name="louvre"),
     path("contact/", views.contact, name="contact"),
+    path("chat/", chat_response, name="chat_response"),
+    path('send_weather/', views.send_weather, name='send_weather'),
+    path('payment/', views.payment_page, name='payment'),
+    path('login/', views.login_view, name='login'),  # Login URL
+    path('signup/', views.signup, name='signup'),  # Signup URL
+    path('profile/', views.profile, name='profile'),  # Profile URL
+    path('profile/update/', views.update_profile, name='update_profile'),  # Update Profile URL
+    path('logout/', views.logout_view, name='logout'),  # Logout URL
+    
+    
+
+
     
 ] 
 

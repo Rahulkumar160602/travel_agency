@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Prototype</title>
+<style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+    .payment-option { margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; width: 300px; display: inline-block; }
+    img { max-width: 150px; }
+    .hidden { display: none; }
+</style>
+<script>
+    function showOption(option) {
+        const allOptions = document.querySelectorAll('.option');
+        allOptions.forEach(opt => opt.classList.add('hidden'));
+        document.getElementById(option).classList.remove('hidden');
+    }
+
+    function confirmPayment() {
+        alert("Payment Successful (Prototype)!");
+        window.location.href = "/booking";  // Redirect to booking page
+    }
+</script>
+</head>
+<body>
+
+<h2>Choose a Payment Method</h2>
+
+<div class="payment-option" onclick="showOption('qr-code')">
+    <h3>Pay via QR Code</h3>
+    <img src="https://via.placeholder.com/150" alt="QR Code">
+</div>
+
+<div class="payment-option" onclick="showOption('phone-number')">
+    <h3>Pay via Phone Number</h3>
+    <img src="https://via.placeholder.com/150/0000FF/FFFFFF?text=Phone+Pay" alt="Phone Pay">
+</div>
+
+<div class="payment-option" onclick="showOption('upi')">
+    <h3>Pay via UPI</h3>
+    <img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=UPI+Pay" alt="UPI Pay">
+</div>
+
+<div class="payment-option" onclick="showOption('card')">
+    <h3>Pay via Card</h3>
+    <img src="https://via.placeholder.com/150/008000/FFFFFF?text=Card+Pay" alt="Card Pay">
+</div>
+
+<!-- QR Code Payment -->
+<div id="qr-code" class="option hidden">
+    <h3>Scan QR Code to Pay</h3>
+    <img src="https://via.placeholder.com/300/CCCCCC/000000?text=Scan+Me" alt="QR Code">
+    <button onclick="confirmPayment()">I've Paid</button>
+</div>
+
+<!-- Phone Number Payment -->
+<div id="phone-number" class="option hidden">
+    <h3>Enter Phone Number to Pay</h3>
+    <input type="text" placeholder="Enter Phone Number">
+    <button onclick="confirmPayment()">Send Request</button>
+</div>
+
+<!-- UPI Payment -->
+<div id="upi" class="option hidden">
+    <h3>Enter UPI ID to Pay</h3>
+    <input type="text" placeholder="Enter UPI ID">
+    <button onclick="confirmPayment()">Send Request</button>
+</div>
+
+<!-- Card Payment -->
+<div id="card" class="option hidden">
+    <h3>Enter Card Details</h3>
+    <input type="text" placeholder="Card Number"><br><br>
+    <input type="text" placeholder="Expiry Date"><br><br>
+    <input type="text" placeholder="CVV"><br><br>
+    <button onclick="confirmPayment()">Pay Now</button>
+</div>
+
+</body>
+</html>

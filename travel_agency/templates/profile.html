@@ -7,58 +7,78 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8ff;
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
         .profile-container {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            width: 100%;
-            max-width: 400px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            border-radius: 10px;
         }
         .profile-container h1 {
-            font-size: 24px;
-            color: #333;
+            text-align: center;
         }
-        .profile-details {
-            margin: 20px 0;
-            font-size: 18px;
-        }
-        .profile-details span {
-            font-weight: bold;
-        }
-        .home-link {
-            margin-top: 20px;
-            display: inline-block;
-            text-decoration: none;
-            background-color: #3b82f6;
-            color: white;
-            padding: 10px 20px;
+        .profile-container input, .profile-container select, .profile-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            transition: background-color 0.3s;
         }
-        .home-link:hover {
-            background-color: #2563eb;
+        .save-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .save-btn:hover {
+            background-color: #45a049;
+        }
+        .file-input {
+            padding: 10px;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
+
     <div class="profile-container">
         <h1>Welcome, {{ user.email }}</h1>
-        <div class="profile-details">
-            <p><span>Email:</span> {{ user.email }}</p>
-            <p><span>Phone:</span> {{ user.phone }}</p>
-            <p><span>Signup Date:</span> {{ user.signup_date }}</p>
-        </div>
-        <a href="/" class="home-link">Go to Home</a>
+
+        <form method="POST" action="/profile/update/" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <input type="text" name="name" placeholder="Enter your name" value="{{ user.name }}" required>
+            <input type="text" name="address" placeholder="Enter your address" value="{{ user.address }}" required>
+            <input type="date" name="dob" placeholder="Enter your date of birth" value="{{ user.dob }}" required>
+            <select name="gender" required>
+                <option value="male" {% if user.gender == "male" %}selected{% endif %}>Male</option>
+                <option value="female" {% if user.gender == "female" %}selected{% endif %}>Female</option>
+                <option value="other" {% if user.gender == "other" %}selected{% endif %}>Other</option>
+            </select>
+        
+            <textarea name="preferences" placeholder="Enter your travel preferences (destinations, activities, etc.)">{{ user.preferences }}</textarea>
+            <input type="text" name="budget" placeholder="Enter your travel budget" value="{{ user.budget }}" required>
+        
+            <input type="url" name="linkedin" placeholder="Enter your LinkedIn URL" value="{{ user.linkedin }}">
+            <input type="url" name="instagram" placeholder="Enter your Instagram URL" value="{{ user.instagram }}">
+        
+            <textarea name="travel_history" placeholder="Enter your past travel experiences (places visited, favorite destinations, etc.)">{{ user.travel_history }}</textarea>
+        
+            <input type="file" name="profile_picture" class="file-input">
+            
+            <button type="submit" class="save-btn">Save Profile</button>
+        </form>
+        
     </div>
+
 </body>
 </html>

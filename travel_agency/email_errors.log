@@ -389,3 +389,438 @@ Traceback (most recent call last):
   File "C:\travel_agency\travel_agency_env\Lib\site-packages\django\http\request.py", line 151, in get_host
     raise DisallowedHost(msg)
 django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Internal Server Error: /help
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET /help HTTP/1.1" 500 61737
+Internal Server Error: /help
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET /help HTTP/1.1" 500 61737
+Internal Server Error: /help
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET /help HTTP/1.1" 500 61737
+Internal Server Error: /help
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET /help HTTP/1.1" 500 61737
+Internal Server Error: /help
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET /help HTTP/1.1" 500 61737
+Internal Server Error: /help
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET /help HTTP/1.1" 500 61737
+Internal Server Error: /help
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET /help HTTP/1.1" 500 61737
+Internal Server Error: /help
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET /help HTTP/1.1" 500 61737
+Internal Server Error: /help
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET /help HTTP/1.1" 500 61737
+Internal Server Error: /help
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET /help HTTP/1.1" 500 61737
+Internal Server Error: /help
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET /help HTTP/1.1" 500 61737
+Internal Server Error: /help
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET /help HTTP/1.1" 500 61737
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET / HTTP/1.1" 500 61701
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET / HTTP/1.1" 500 61701
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET / HTTP/1.1" 500 61701
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET / HTTP/1.1" 500 61701
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET / HTTP/1.1" 500 61701
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET / HTTP/1.1" 500 61701
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: catch_all() missing 1 required positional argument: 'path'
+"GET / HTTP/1.1" 500 61701
+Internal Server Error: /submit-booking
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 167, in submit_booking
+    booking_saved = save_booking_to_excel(name, email, destination, date, guests, notes,
+                   ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'save_booking_to_excel' is not defined. Did you mean: 'save_contact_to_excel'?
+"POST /submit-booking HTTP/1.1" 500 70701
+Internal Server Error: /chat/
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 313, in chat_response
+    bot_response = get_best_match(user_input)  # Use fuzzy matching for response
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 295, in get_best_match
+    return training_data[user_input]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'hii'
+"POST /chat/ HTTP/1.1" 500 71139
+Internal Server Error: /chat/
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 313, in chat_response
+    bot_response = get_best_match(user_input)  # Use fuzzy matching for response
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 295, in get_best_match
+    return training_data[user_input]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'hii'
+"POST /chat/ HTTP/1.1" 500 71139
+Internal Server Error: /chat/
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 313, in chat_response
+    bot_response = get_best_match(user_input)  # Use fuzzy matching for response
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 295, in get_best_match
+    return training_data[user_input]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'hii'
+"POST /chat/ HTTP/1.1" 500 71139
+Internal Server Error: /chat/
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 313, in chat_response
+    bot_response = get_best_match(user_input)  # Use fuzzy matching for response
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 295, in get_best_match
+    return training_data[user_input]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'hii'
+"POST /chat/ HTTP/1.1" 500 71139
+Internal Server Error: /chat/
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 313, in chat_response
+    bot_response = get_best_match(user_input)  # Use fuzzy matching for response
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 295, in get_best_match
+    return training_data[user_input]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'hii'
+"POST /chat/ HTTP/1.1" 500 71139
+Internal Server Error: /submit-booking
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 160, in submit_booking
+    schedule_daily_weather_emails(email, destination, date)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'schedule_daily_weather_emails' is not defined
+"POST /submit-booking HTTP/1.1" 500 69236
+Internal Server Error: /submit-booking
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 160, in submit_booking
+    schedule_daily_weather_emails(email, destination, date)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'schedule_daily_weather_emails' is not defined
+"POST /submit-booking HTTP/1.1" 500 69236
+Internal Server Error: /submit-booking
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 157, in submit_booking
+    send_weather_email(email, destination)
+TypeError: send_weather_email() missing 1 required positional argument: 'trip_date'
+"POST /submit-booking HTTP/1.1" 500 69337
+Internal Server Error: /submit-booking
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 160, in submit_booking
+    schedule_daily_weather_emails(email, destination, date)
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 177, in schedule_daily_weather_emails
+    weather_details = get_weather_forecast(destination, today)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\utils.py", line 132, in get_weather_forecast
+    response = requests.get(BASE_URL, params=params)
+               ^^^^^^^^
+NameError: name 'requests' is not defined
+"POST /submit-booking HTTP/1.1" 500 78257
+Internal Server Error: /submit-booking
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 157, in submit_booking
+    send_weather_email(email, destination,date)
+TypeError: send_weather_email() takes 2 positional arguments but 3 were given
+"POST /submit-booking HTTP/1.1" 500 69272
+Internal Server Error: /submit-booking
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 160, in submit_booking
+    schedule_daily_weather_emails(email, destination, date)
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 177, in schedule_daily_weather_emails
+    weather_details = get_weather_forecast(destination, today)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\utils.py", line 142, in get_weather_forecast
+    if forecast['dt_txt'].startswith(trip_date):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: startswith first arg must be str or a tuple of str, not datetime.date
+"POST /submit-booking HTTP/1.1" 500 85713
+Internal Server Error: /send_weather/
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 413, in send_weather
+    send_weather_email("kumarr47872@gmail.com", "London")
+TypeError: send_weather_email() missing 1 required positional argument: 'trip_date'
+"GET /send_weather/ HTTP/1.1" 500 65389
+Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 128, in profile
+    return redirect('profile_creation')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profile_creation' not found. 'profile_creation' is not a valid view function or pattern name.
+"GET /profile/ HTTP/1.1" 500 84397
+Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\travel_agency\travel_agency\travel_app\views.py", line 128, in profile
+    return redirect('profile_creation')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prade\AppData\Roaming\Python\Python312\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profile_creation' not found. 'profile_creation' is not a valid view function or pattern name.
+"GET /profile/ HTTP/1.1" 500 84397
+Internal Server Error: /signup/
+"POST /signup/ HTTP/1.1" 500 38
+Internal Server Error: /signup/
+"POST /signup/ HTTP/1.1" 500 38
+Internal Server Error: /signup/
+"POST /signup/ HTTP/1.1" 500 38

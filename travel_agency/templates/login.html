@@ -57,17 +57,25 @@
         .social-login a {
             flex: 1;
             margin: 0 0.5rem;
-            padding: 0.5rem;
+            padding: 0.75rem;
             text-align: center;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .social-login a.facebook {
             background-color: #3b5998;
         }
         .social-login a.google {
             background-color: #db4437;
+        }
+        .social-login img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
         }
         .btn {
             background-color: #007bff;
@@ -108,8 +116,15 @@
             <button type="submit" class="btn">Login</button>
         </form>
         <div class="social-login">
-            <a href="#" class="facebook">Login with Facebook</a>
-            <a href="#" class="google">Login with Google</a>
+            <!-- Facebook Login with Icon -->
+            <a href="#" class="facebook">
+                <img src="/static/faceboo-icon.png" alt="Facebook"> Login with Facebook
+            </a>
+
+            <!-- Google Login with Icon -->
+            <a href="#" class="google">
+                <img src="/static/google-icon.png" alt="Google"> Login with Google
+            </a>
         </div>
         <div class="signup-link">
             <p>Don't have an account? <a href="/signup">Signup</a></p>

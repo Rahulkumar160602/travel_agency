@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_cron',
 ]
 
 MIDDLEWARE = [
@@ -136,13 +137,12 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / "media"
 
-# EMAIL CONFIGURATION
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'rahulgupta160602@gmail.com'
-EMAIL_HOST_PASSWORD = 'ghwwzacdlnlehauj'
+EMAIL_HOST_PASSWORD = 'pblxftuagtzxzert'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True  # Use SSL instead of TLS
@@ -167,3 +167,5 @@ LOGGING = {
         },
     },
 }
+# Sendinblue Configuration
+SENDINBLUE_API_KEY = 'Sendinblue Key'  # Replace with your actual API key

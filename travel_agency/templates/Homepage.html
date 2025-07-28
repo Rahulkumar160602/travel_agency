@@ -183,10 +183,6 @@
     <header>
         <h1>Welcome to Paradise</h1>
     </header>
-    <div class="content">
-        <p>Discover amazing features and stay connected.</p>
-        <a href="/login" class="login-signup">Login or Signup</a>
-    </div>
     <nav>
         <a href="/">Home</a>
         <a href="/services">Services</a>
@@ -216,18 +212,6 @@
         </div>
     </section>
     <footer>
-        <div>
-            Follow us on:
-            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
-        </div>
-        <div>
-            Subscribe for updates:
-            <form>
-                <input type="email" placeholder="Your email">
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </footer>
     
     <!-- Chatbot Button -->
 <div id="chatbot-button">
@@ -253,30 +237,46 @@
 </body>
 </html>
 <script>
+    // Wait for the DOM to fully load before running the script
+    document.addEventListener("DOMContentLoaded", function() {
+        // Clear chat history on page load
+        document.querySelector("#chat-output").innerHTML = '';
+    });
+
+    // Add event listener to the send button
     document.querySelector("#chat-input button").addEventListener("click", function() {
         const userMessage = document.querySelector("#chat-input input").value;
         if (userMessage) {
             // Display user message
             const userMessageDiv = document.createElement("div");
-            userMessageDiv.innerHTML = `<strong>You:</strong> ${userMessage}`;
+            userMessageDiv.textContent = `You: ${userMessage}`;  // Use textContent to avoid HTML injection
             document.querySelector("#chat-output").appendChild(userMessageDiv);
 
-            // Send user message to the server and get the response
+            // Send user message to Django server
             fetch('/chat/', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': getCSRFToken()  // Include CSRF token for Django
                 },
-                body: JSON.stringify({ user_input: userMessage }),
+                body: new URLSearchParams({ user_input: userMessage })
             })
             .then(response => response.json())
             .then(data => {
                 // Display bot response
                 const botMessageDiv = document.createElement("div");
-                botMessageDiv.innerHTML = `<strong>Bot:</strong> ${data.response}`;
+                botMessageDiv.textContent = `Bot: ${data.response}`;  // Use textContent to avoid HTML injection
                 document.querySelector("#chat-output").appendChild(botMessageDiv);
-                document.querySelector("#chat-input input").value = '';  // Clear input field
-            });
+                
+                // Clear input field after response
+                document.querySelector("#chat-input input").value = '';
+            })
+            .catch(error => console.error("Error:", error));  // Log any errors
         }
     });
+
+    // Function to get CSRF token safely from the cookies
+    function getCSRFToken() {
+        return document.cookie.split('; ').find(row => row.startsWith('csrftoken'))?.split('=')[1];
+    }
 </script>
